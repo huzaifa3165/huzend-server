@@ -30,7 +30,9 @@ const learningdata = (title) => {
 
 app.use(json());
 app.use(cors());
-
+app.get("/", (req, res) => {
+  res.send("Hello Huzend");
+});
 app.post("/learningdata", (req, res) => {
   const { title } = req.body;
   const data = learningdata(title);
