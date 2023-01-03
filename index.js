@@ -26,6 +26,7 @@ const learningdata = async (title) => {
         nextUrl = module.url;
       }
     });
+    nextallowed = false;
   });
   return { data, courseID, moduleID, nextUrl };
 };
