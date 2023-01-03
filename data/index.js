@@ -236,18 +236,18 @@ export const Universal = {
           questions: [
             {
               key: 1,
-              title: "Which is the World's Best man Ever in the history",
+              title: "Who is the owner of Huzend",
               options: [
-                { option: "Muhammad P.B.U.H", opValue: "correct" },
+                { option: "Huzaifa", opValue: "correct" },
                 { option: "Anyone else", opValue: "incorrect1" },
                 { option: "Someone else", opValue: "incorrect2" },
               ],
             },
             {
               key: 2,
-              title: "Which is the World's Best place",
+              title: "Where is the Huzaifa",
               options: [
-                { option: "Meka", opValue: "correct" },
+                { option: "Lahore", opValue: "correct" },
                 { option: "Dubai", opValue: "incorrect1" },
                 { option: "Australia", opValue: "incorrect2" },
               ],
