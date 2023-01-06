@@ -190,10 +190,28 @@ export const Universal = {
       courseID: 1,
       courseName: "Web Development",
       totalEnrollments: 3234,
-      instructor: {
-        name: "Huzaifa",
-        role: "Admin",
-      },
+      instructors: [
+        {
+          name: "Ryan Tompson",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar1.png",
+        },
+        {
+          name: "Romina Hadid",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar2.png",
+        },
+        {
+          name: "Alexander Smith",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar3.png",
+        },
+        {
+          name: "Jessica Doe",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar4.png",
+        },
+      ],
       createdOn: "2022/08/11",
       uploadCompleted: true,
       duration: 19.4,
@@ -288,10 +306,28 @@ export const Universal = {
       courseID: 2,
       courseName: "App Development",
       totalEnrollments: 3234,
-      instructor: {
-        name: "Huzaifa",
-        role: "Admin",
-      },
+      instructors: [
+        {
+          name: "Ryan Tompson",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar1.png",
+        },
+        {
+          name: "Romina Hadid",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar2.png",
+        },
+        {
+          name: "Alexander Smith",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar3.png",
+        },
+        {
+          name: "Jessica Doe",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar4.png",
+        },
+      ],
       createdOn: "2022/08/11",
       uploadCompleted: false,
       duration: 23.5,
@@ -386,10 +422,28 @@ export const Universal = {
       courseID: 3,
       courseName: "Game Development",
       totalEnrollments: 3234,
-      instructor: {
-        name: "Huzaifa",
-        role: "Admin",
-      },
+      instructors: [
+        {
+          name: "Huzaifa Ramzan",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar1.png",
+        },
+        {
+          name: "Ali Hassan",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar2.png",
+        },
+        {
+          name: "John Doe",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar3.png",
+        },
+        {
+          name: "Mark Doe",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar4.png",
+        },
+      ],
       createdOn: "2022/08/11",
       uploadCompleted: true,
       duration: 15,
@@ -484,10 +538,28 @@ export const Universal = {
       courseID: 4,
       courseName: "OS Development",
       totalEnrollments: 3234,
-      instructor: {
-        name: "Huzaifa",
-        role: "Admin",
-      },
+      instructors: [
+        {
+          name: "Ryan Tompson",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar1.png",
+        },
+        {
+          name: "Romina Hadid",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar2.png",
+        },
+        {
+          name: "Alexander Smith",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar3.png",
+        },
+        {
+          name: "Jessica Doe",
+          image:
+            "https://huzaifa3165.github.io/dashboard-assets/images/avatar4.png",
+        },
+      ],
       createdOn: "2022/08/11",
       uploadCompleted: false,
       duration: 13,
