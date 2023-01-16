@@ -13,29 +13,31 @@ import {
 // functions
 
 const learningdata = async (title) => {
-  const Universal = await readData("universal");
-  let iteration = true;
-  let data, courseID, moduleID, courseName;
-  let nextUrl = undefined;
-  let nextallowed = false;
-  Universal.courses.map((course) => {
-    course.learnModule.map((module) => {
-      if (title.toLowerCase() == module.url.toLowerCase() && iteration) {
-        iteration = false;
-        data = module;
-        courseID = course.courseID;
-        courseName = course.courseName;
-        moduleID = module.id;
-        nextallowed = true;
-        nextUrl = "";
-      } else if (nextallowed) {
-        nextallowed = false;
-        nextUrl = module.url;
-      }
+  try {
+    const Universal = await readData("universal");
+    let iteration = true;
+    let data, courseID, moduleID, courseName;
+    let nextUrl = undefined;
+    let nextallowed = false;
+    Universal.courses.map((course) => {
+      course.learnModule.map((module) => {
+        if (title.toLowerCase() == module.url.toLowerCase() && iteration) {
+          iteration = false;
+          data = module;
+          courseID = course.courseID;
+          courseName = course.courseName;
+          moduleID = module.id;
+          nextallowed = true;
+          nextUrl = "";
+        } else if (nextallowed) {
+          nextallowed = false;
+          nextUrl = module.url;
+        }
+      });
+      nextallowed = false;
     });
-    nextallowed = false;
-  });
-  return { data, courseID, moduleID, nextUrl, courseName };
+    return { data, courseID, moduleID, nextUrl, courseName };
+  } catch (error) {}
 };
 function getWeekOfMonth(date) {
   let firstDayOfMonth = new Date(date.getFullYear(), date.getMonth(), 1);
@@ -71,13 +73,13 @@ app.get("/", (req, res, next) => {
     next(error);
   }
 });
-app.post("/learningdata", async (req, res, next) => {
+app.post("/learningdata", async (req, res) => {
   try {
     const { title } = req.body;
     const data = await learningdata(title);
-    res.status(200).send(data);
+    if (data !== 0) res.status(200).send(data);
   } catch (error) {
-    next(error);
+    console.log(error);
   }
 });
 app.post("/timeSpent", async (req, res, next) => {
